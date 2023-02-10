@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon_32x32.png">
+    <title>Marais Roos</title>
+</head>
+<body onload="loadAll()">
+    <main>
+        <!--Navigation Bar-->
+        <nav class="nav-bar" id="nav_bar">
+            <a href="index.html"><img class="logo" src="assets/images/Logo.png" alt="Marais Roos logo"></a>
+            <ul class="nav-items">
+                <li><a href="#skill-section">Skills</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#blog-section">Blog</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li>|</li>
+                <li>
+                    <div class="nav-socials">
+                        <a href="https://www.linkedin.com/in/marais-roos/" target="_blank"><img src="assets/icons/linkedin_24x24.png" alt="link LinkedIn profile"></a>
+                        <a href="https://github.com/Marais-Roos" target="_blank"><img src="assets/icons/github_24x24.png" alt="link GitHub profile"></a>
+                        <a href="https://twitter.com/M_Roos09" target="_blank"><img src="assets/icons/twitter_24x24.png" alt="link Twitter profile"></a>
+                    </div>
+                </li>
+            </ul>
+            <button class="burger-menu" id="burger_menu">
+                <img src="assets/icons/Hamburger Menu.png" >
+            </button>
+        </nav>
+        <!--Hero Section-->
+        <div class="hero-section" id="hero-section">
+            <div class="hero-wrapper">
+                <header>
+                    <h1 class="main-heading">Marais Roos<span class="point">.</span></h1>
+                    <hr>
+                    <p class="paragraph"><a>LinkedIn</a> | <a>GitHub</a> | <a>Twitter</a></p>
+                    <a href="#contact-section" class="btn">Contact Me</a>
+                </header>
+                <img class="hero-image" src="assets/images/Hero Image.png" alt="Marais Roos in a suit">
+                <div class="hero-content">
+                    <p class="section-heading">Introduction</p>
+                    <h2 class="heading-1">Web designer, web developer, Software Developer</h2>
+                    <p class="paragraph">
+                        I design and build websites. I produce engaging written content for websites and social media. I also specialize in software development.
+                        <br>
+                        <br>
+                        Scroll around and feel free to reach out to me!
+                    </p>
+                    <p></p>
+                    <p class="learn"><a href="#skill-section">Learn More ↓</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Skills Section-->
+        <div class="skill-section">
+            <div class="skill-content" id="skill-section">
+                <p class="section-heading">Skills</p>
+                <h2 class="heading-1">What I excel at</h2>
+                <p class="paragraph">
+                    A breakdown of my top skills. Skills that I have acquired ever since I started my programming journey in 2015.
+                </p>
+            </div>
+            <div class="skill-container" id="skill_container"> 
+                <a href="#portfolio_section" id="web_design" onclick="loadWebDesign()">
+                    <div class="skill-wrapper">
+                        <div class="skill-card design">
+                            <img src="assets/icons/web-desgin_100x100.png" alt="software development icon">
+                            <div>
+                                <h3 class="skill-heading">Web Design</h3>
+                                <p>The planning and creation of websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#portfolio_section" id="web_dev" onclick="loadWebDevelopment()">
+                    <div class="skill-wrapper">
+                        <div class="skill-card webdev">
+                            <img src="assets/icons/web-dev_100x100.png" alt="web development icon">
+                            <div>
+                                <h3 class="skill-heading">Web Development</h3>
+                                <p>The build and maintenance of websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#portfolio_section" id="software_dev" onclick="loadSoftwareDevelopment()">
+                    <div class="skill-wrapper">
+                        <div class="skill-card software">
+                            <img src="assets/icons/software-dev_100x100.png" alt="software development icon">
+                            <div>
+                                <h3 class="skill-heading">Software Development</h3>
+                                <p>The creation, design, deployment and support of software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#portfolio_section" id="copy_write" onclick="loadCopywriting()">
+                    <div class="skill-wrapper">
+                        <div class="skill-card copywrite">
+                            <img src="assets/icons/copywrite_100x100.png" alt="copywriting icon">
+                            <div>
+                                <h3 class="skill-heading">Copywriting</h3>
+                                <p>The production of engaging and clear text copies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Portfolio Section-->
+        <div class="portfolio-section" id="portfolio_section">
+            <div class="portfolio-content">
+                <p class="section-heading">Portfolio</p>
+                <h2 class="heading-1">A Few Of My Favourites</h2>
+                <p class="paragraph">
+                    Over the years I have done several projects. Here is a collection of a few of my favourites.
+                </p>
+            </div>
+            <ul class="skills" id="skills">
+                <li><a id="linkAll" href="#linkAll" class="selected" onclick="loadAll()">All</a></li>
+                <li><a id="linkDesign" href="#linkDesign" onclick="loadWebDesign()">Web design</a></li>
+                <li><a id="linkWebDev" href="#linkWebDev" onclick="loadWebDevelopment()">Web development</a></li>
+                <li><a id="linkSoftware" href="#linkSoftware" onclick="loadSoftwareDevelopment()">Software development</a></li>
+                <li><a id="linkCopywrite" href="#linkCopywrite" onclick="loadCopywriting()">Copywriting</a></li>
+            </ul>
+            <div class="content">
+                <grid-container class="portfolio-grid" id="portfolio_grid">
+                    <grid-item class="pA" id="pA"></grid-item>
+                    <grid-item class="pB" id="pB"></grid-item>
+                    <grid-item class="pC" id="pC"></grid-item>
+                    <grid-item class="pD" id="pD"></grid-item>
+                </grid-container>
+            </div>
+        </div>
+        <!--Blog Section-->
+        <div>
+            <div class="blog-section" id="blog-section">
+                <div class="blog-content">
+                    <p class="section-heading">Blog</p>
+                    <h2 class="heading-1">Out of my pen</h2>
+                    <p class="paragraph">
+                        I document my development process into interesting writings, or I write about the latest technologies I come across.
+                    </p>
+                </div>
+                <grid-container class="blog-grid" id="blog_grid">
+                    <grid-item class="big-card A">
+                        <img class="blog-img" src="https://via.placeholder.com/393x300">
+                        <h3 class="post-title">Blog post title a</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </grid-item>
+                    <grid-item class="big-card B">
+                        <img class="blog-img" src="https://via.placeholder.com/393x300">
+                        <h3 class="post-title">Blog post title b</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </grid-item>
+                    <grid-item class="small-card">
+                        <img class="blog-img" src="https://via.placeholder.com/130x210">
+                        <div class="post-wrapper">
+                            <h3 class="post-title">Blog post title c</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsequat.</p>
+                        </div>
+                    </grid-item>
+                    <grid-item class="small-card">
+                        <img class="blog-img" src="https://via.placeholder.com/130x210">
+                        <div class="post-wrapper">
+                            <h3 class="post-title">Blog post title d</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsequat.</p>
+                        </div>
+                        </grid-item>
+                    <grid-item class="small-card">
+                        <img class="blog-img" src="https://via.placeholder.com/130x210">
+                        <div class="post-wrapper">
+                            <h3 class="post-title">Blog post title e</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt onsequat.</p>
+                        </div>
+                        </grid-item>
+                </grid-container>
+            </div>
+        </div>
+        <!--Contact Section-->
+        <div class="contact-section" id="contact-section">
+            <div class="contact-content">
+                <p class="section-heading">Contact</p>
+                <h2 class="heading-1">Get in touch with me</h2>
+                <p class="paragraph">
+                    If you like what you have seen and would like to contact me.<br>You can reach me in any of the following ways.
+                </p>
+            </div>
+            <div class="contacts-container">
+                <a class="contact-link" href="mailto:maraisroos@outlook.com" target="_blank">
+                    <div class="email card">
+                        <img src="assets/icons/email_32x32.png" alt="email icon">
+                        <p>maraisroos@outlook.com</p>
+                    </div>
+                </a>
+                <a class="contact-link" href="https://www.linkedin.com/in/marais-roos/" target="_blank">
+                    <div class="email card">
+                        <img src="assets/icons/email_32x32.png" alt="email icon">
+                        <p>marais-roos</p>
+                    </div>
+                </a>
+                <a class="contact-link" href="https://twitter.com/M_Roos09" target="_blank">
+                    <div class="email card">
+                        <img src="assets/icons/email_32x32.png" alt="email icon">
+                        <p>@M_Roos09</p>
+                    </div>
+                </a>
+            </div>
+            <p class="paragraph">Alternatively, you can fill out the form below and I will get in touch with you as soon as possible.</p>
+            <form class="contact-form" action="https://formspree.io/f/mdovearr" method="POST" id="contact_form">
+                <div>
+                    <input type="text" id="first_name" name="sender-name" placeholder="First name" required class="input-field" />
+                    <input type="text" id="last_name" name="sender-surname" placeholder="Last name" class="input-field" />
+                </div>
+                <input type="text" id="email" name="sender-email" placeholder="Email address" required class="input-field" />
+                <textarea id="message" cols="60" rows="30" placeholder="Enter your message here..." required name="message" class="input-field"></textarea>
+                <button type="submit" id="submit_btn" class="submit-btn" id="submit-btn">Submit</button>
+            </form>
+        </div>
+        <!--Footer-->
+        <footer>
+            <a href="#hero-section"><img class="logo" src="assets/images/Logo.png" alt="Marais Roos logo"></a>
+            <ul class="nav-items">
+                <li><a href="#skill-section">Skills</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#blog-section">Blog</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <p class="paragraph">&copy; Marais Roos. 2023</p>
+
+            <script src="assets/js/script.js"></script>
+        </footer>
+    </main>
+</body>
+</html>
