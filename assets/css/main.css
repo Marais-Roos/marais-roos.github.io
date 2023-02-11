@@ -38,7 +38,6 @@ body {
     font-size: 64px;
     line-height: 64px;
     color: var(--tertiary-colour);
-
 }
 
 .point {
@@ -176,17 +175,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
-}
-
-.bar {
-    display: block;
-    width: 28px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    color: var(--tertiary-colour);
+    background-color: var(--tertiary-colour);
 }
 
 .hero-section {
@@ -197,8 +186,9 @@ a {
     padding: 100px 100px 0 100px;
     align-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -212,7 +202,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
     gap: 84px;
     width: 1240px;
@@ -234,11 +224,10 @@ header hr {
 
 .hero-content .heading-1 {
     width: 398px;
-    height: 120px;
 }
 
 .hero-content > .paragraph {
-    text-align: left !important;
+    text-align: left;
 }
 
 .hero-content .paragraph {

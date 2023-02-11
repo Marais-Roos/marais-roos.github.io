@@ -1,5 +1,4 @@
 :root {
-    --font-family: "Montserrat", sans-serif;
     --primary-colour: #293B5F;
     --secondary-colour: #47597E;
     --tertiary-colour: #DBE6FD;
@@ -8,8 +7,6 @@
     --medium-font: 500;
     --semi-bold-font: 600;
     --bold-font: 700;
-    --heading-size: 27px;
-    --paragraph-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
@@ -65,6 +62,87 @@
         border: none;
         background-color: var(--tertiary-colour);
         transform: translateY(0) rotate(0deg);
+    }
+
+    .main-heading {
+        height: 96px;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .section-heading {
+        height: 12px;
+        line-height: 12px;
+        font-size: 12px;
+    }
+
+    .heading-1 {
+        font-size: 27px;
+        line-height: 30px;
+        text-align: center;
+        height: auto;
+    }
+
+    .paragraph {
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section {
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        gap: 30px;
+        width: 1240px;
+    }
+
+    header {
+        gap: 15px;
+        width: 223px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 12px;
+        line-height: 12px;
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 15px;
+        align-items: left;
+    }
+
+    .hero-content > .paragraph {
+        text-align: center;
     }
 }
 
