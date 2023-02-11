@@ -11,6 +11,7 @@
 
 @media screen and (max-width: 768px) {
     .nav-bar {
+        position: relative;
         width: 100%;
         height: 50px;
         display: flex;
@@ -91,14 +92,11 @@
         align-items: center;
     }
 
-    .hero-section {
-        top: 0;
+    .hero-section, .skill-section {
         width: 100%;
         height: auto;
         padding: 30px;
         align-content: center;
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -132,17 +130,67 @@
         height: 280px;
     }
 
-    .hero-content {
+    .hero-content, .skill-content, .portfolio-content, .blog-content, .contact-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0px;
         gap: 15px;
         align-items: left;
+        width: 280px;
     }
 
     .hero-content > .paragraph {
         text-align: center;
+        height: auto;
+        width: 280px;
+    }
+
+    .learn a{
+        font-size: 12px;
+    }
+
+    .skill-content {
+        width: 280px;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-card {
+        height: 260px;
+        width: 225px;
+        padding: 15px;
+    }
+
+    .skill-card img {
+        position: relative;
+        left: 60px;
+        top: 30px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .skill-heading {
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center; 
+    }
+
+    .skill-card p {
+        width: 180px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .skill-card > div {
+        margin-top: 60px;
     }
 }
 
