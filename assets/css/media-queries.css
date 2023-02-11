@@ -1,0 +1,70 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --primary-colour: #293B5F;
+    --secondary-colour: #47597E;
+    --tertiary-colour: #DBE6FD;
+    --accent-colour: #B2AB8C;
+    --normal-font: 400;
+    --medium-font: 500;
+    --semi-bold-font: 600;
+    --bold-font: 700;
+    --heading-size: 27px;
+    --paragraph-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        padding: 1px 30px;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .logo {
+        height: 48px;
+        width: 48px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 50px;
+        padding: 30px;
+        gap: 15px;
+        flex-direction: column;
+        background-color: var(--primary-colour);
+        transition: 0.3s;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item hr {
+        width: 100px;
+        height: 1px;
+        border: none;
+        background-color: var(--tertiary-colour);
+        transform: translateY(0) rotate(0deg);
+    }
+}
+

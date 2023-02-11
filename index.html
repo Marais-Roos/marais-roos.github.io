@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/media-queries.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon_32x32.png">
     <title>Marais Roos</title>
@@ -14,13 +15,23 @@
         <!--Navigation Bar-->
         <nav class="nav-bar" id="nav_bar">
             <a href="index.html"><img class="logo" src="assets/images/Logo.png" alt="Marais Roos logo"></a>
-            <ul class="nav-items">
-                <li><a href="#skill-section">Skills</a></li>
-                <li><a href="#portfolio-section">Portfolio</a></li>
-                <li><a href="#blog-section">Blog</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-                <li>|</li>
-                <li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#skill-section" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio-section" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog-section" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-section" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <hr>
+                </li>
+                <li class="nav-item">
                     <div class="nav-socials">
                         <a href="https://www.linkedin.com/in/marais-roos/" target="_blank"><img src="assets/icons/linkedin_24x24.png" alt="link LinkedIn profile"></a>
                         <a href="https://github.com/Marais-Roos" target="_blank"><img src="assets/icons/github_24x24.png" alt="link GitHub profile"></a>
@@ -28,9 +39,11 @@
                     </div>
                 </li>
             </ul>
-            <button class="burger-menu" id="burger_menu">
-                <img src="assets/icons/Hamburger Menu.png" >
-            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <!--Hero Section-->
         <div class="hero-section" id="hero-section">
@@ -200,13 +213,13 @@
                 </a>
                 <a class="contact-link" href="https://www.linkedin.com/in/marais-roos/" target="_blank">
                     <div class="email card">
-                        <img src="assets/icons/email_32x32.png" alt="email icon">
+                        <img src="assets/icons/linkedin_32x32.png" alt="email icon">
                         <p>marais-roos</p>
                     </div>
                 </a>
                 <a class="contact-link" href="https://twitter.com/M_Roos09" target="_blank">
                     <div class="email card">
-                        <img src="assets/icons/email_32x32.png" alt="email icon">
+                        <img src="assets/icons/twitter_32x32.png" alt="email icon">
                         <p>@M_Roos09</p>
                     </div>
                 </a>
