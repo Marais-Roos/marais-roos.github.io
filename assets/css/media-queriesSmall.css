@@ -9,7 +9,7 @@
     --bold-font: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .nav-bar {
         position: relative;
         width: 100%;
