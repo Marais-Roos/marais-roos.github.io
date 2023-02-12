@@ -20,7 +20,7 @@
                     <a href="#skill-section" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#portfolio-section" class="nav-link">Portfolio</a>
+                    <a href="#portfolio_section" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a href="#blog-section" class="nav-link">Blog</a>
@@ -126,12 +126,21 @@
                 </p>
             </div>
             <ul class="skills" id="skills">
-                <li><a id="linkAll" href="#linkAll" class="selected" onclick="loadAll()">All</a></li>
-                <li><a id="linkDesign" href="#linkDesign" onclick="loadWebDesign()">Web design</a></li>
-                <li><a id="linkWebDev" href="#linkWebDev" onclick="loadWebDevelopment()">Web development</a></li>
-                <li><a id="linkSoftware" href="#linkSoftware" onclick="loadSoftwareDevelopment()">Software development</a></li>
-                <li><a id="linkCopywrite" href="#linkCopywrite" onclick="loadCopywriting()">Copywriting</a></li>
+                <li><a id="linkAll" href="#" class="selected" onclick="loadAll()">All</a></li>
+                <li><a id="linkDesign" href="#" onclick="loadWebDesign()">Web design</a></li>
+                <li><a id="linkWebDev" href="#" onclick="loadWebDevelopment()">Web development</a></li>
+                <li><a id="linkSoftware" href="#" onclick="loadSoftwareDevelopment()">Software development</a></li>
+                <li><a id="linkCopywrite" href="#" onclick="loadCopywriting()">Copywriting</a></li>
             </ul>
+            <div class="responsive-select">
+                <select class="skills-select" id="skills-select">
+                  <option value="#linkAll" id="select_link_all" onclick="loadAll()">All</option>
+                  <option value="#linkDesign" id="select_link_design" onclick="loadWebDesign()">Web design</option>
+                  <option value="#linkWebDev" id="select_link_webdev" onclick="loadWebDevelopment()">Web development</a></option>
+                  <option value="#linkSoftware" id="select_link_softwaredev" onclick="loadSoftwareDevelopment()">Software development</a></option>
+                  <option value="#linkCopywrite" id="select_link_copywriting" onclick="loadCopywriting()">Copywriting</a></option>
+                </select>
+              </div>
             <div class="content">
                 <grid-container class="portfolio-grid" id="portfolio_grid">
                     <grid-item class="pA" id="pA"></grid-item>
@@ -229,15 +238,26 @@
         <!--Footer-->
         <footer>
             <a href="#hero-section"><img class="logo" src="assets/images/Logo.png" alt="Marais Roos logo"></a>
-            <ul class="nav-items">
-                <li><a href="#skill-section">Skills</a></li>
-                <li><a href="#portfolio-section">Portfolio</a></li>
-                <li><a href="#blog-section">Blog</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+            <ul class="footer-menu">
+                <li class="footer-item">
+                    <a href="#skill-section" class="footer-link">Skills</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#portfolio_section" class="footer-link">Portfolio</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#blog-section" class="footer-link">Blog</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#contact-section" class="footer-link">Contact</a>
+                </li>
             </ul>
             <p class="paragraph">&copy; Marais Roos. 2023</p>
 
-            <script src="assets/js/script.js"></script>
+            <script src="assets/js/clearForm.js"></script>
+            <script src="assets/js/hamburgerMenu.js"></script>
+            <script src="assets/js/loadProjects.js"></script>
+            <script src="assets/js/selectMenu.js"></script>
         </footer>
     </main>
 </body>
