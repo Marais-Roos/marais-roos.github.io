@@ -458,6 +458,7 @@ header hr {
     width: auto;
 }
 
+/*
 .read-more {
     margin: 0 30px 0 30px;
     width: auto;
@@ -470,6 +471,7 @@ header hr {
 .read-more a {
     color: var(--accent-colour);
 }
+*/
 
 .small-card {
     height: calc((660px - 30px) / 3);
