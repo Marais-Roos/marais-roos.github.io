@@ -91,7 +91,7 @@
         width: 100%;
     }
 
-    .hero-section, .skill-section, .portfolio-section, .blog-section, .contact-section {
+    .hero-section, .skill-section, .portfolio-section, .blog-section, .contact-section, footer {
         width: 100%;
         height: auto;
         padding: 30px;
@@ -361,6 +361,23 @@
         
         font-size: 12px;
         line-height: 12px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .footer-item a{
+        font-size: 12px;
+        font-weight: var(--bold-font);
     }
 }
     
