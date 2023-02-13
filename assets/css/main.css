@@ -514,7 +514,6 @@ a .card > p{
     width: 350px;
     height: 50px;
     background-color: var(--secondary-colour);
-    margin: 30px 0;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -526,6 +525,8 @@ a .card > p{
     display: flex;
     flex-direction: row;
     gap: 50px;
+    
+    margin: 30px 0;
 }
 
 .contact-form {
