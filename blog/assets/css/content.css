@@ -1,0 +1,100 @@
+@import url("/assets/css/main.css");
+
+a {
+    text-decoration: none;
+    color : var(--accent-colour);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > p {
+    font: var(--paragraph);
+    color: var(--tertiary-colour);
+    width: 100%;
+    line-height: 24px;
+    width: 75vw;
+}
+
+.about-img {
+    width: 50vw;
+}
+
+figcaption {
+    text-align: center;
+    font: var(--paragraph);
+    font-style: italic;
+    color: var(--tertiary-colour);
+    margin: 10px 0 15px 0;
+}
+
+.contact-p {
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 30px;
+    background-color: var(--secondary-colour);
+    width: 650px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    color: (var(--primary-colour));
+    border: 1px solid var(--primary-colour);
+    padding: 5px 10px;
+    font-size: var(--paragraph-size);
+    font-weight: var(--normal-font);
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-colour);
+}
+
+.contact-form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact-form > textarea {
+    height: 150px;
+    font-family: var(--font-family);
+    font-weight: var(--normal-font);
+}
+
+.submit-btn {
+    width: 182px;
+    height: 48px;
+    margin-left: calc((590px - 182px) / 2);
+    background-color: transparent;
+    color: var(--accent-colour);
+    padding: 16px 32px;
+
+    border-radius: 10px;
+    
+    border: 1px solid var(--accent-colour);
+    
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-size);
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-colour);
+    color: var(--primary-colour);
+    font-weight: var(--bold-font);
+}
